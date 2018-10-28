@@ -1,5 +1,5 @@
 {
-  "xsappname": "${org}-${space}-shine",
+  "xsappname": "P2000547972trial_trial-dev-shine",
   "tenant-mode":"dedicated",
   "scopes": [
   	{
