@@ -4,7 +4,7 @@ stage("Clone"){
 }
 
 stage("Build"){
- bat "java -jar /opt/sap/mta.jar --build-target=CF --mtar=shine_cf.mtar build"
+ bat "java -jar mta.jar --build-target=CF --mtar=shine_cf.mtar build"
     
 }
 stage("Deploy"){
