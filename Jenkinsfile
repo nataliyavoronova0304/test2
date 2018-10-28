@@ -1,6 +1,6 @@
 node() {
 stage("Clone"){
-    git url: 'https://github.com/marionschlotte/shinecf.git'
+    git url: 'https://github.com/nataliyavoronova0304/test2.git'
 }
 
 stage("Build"){
