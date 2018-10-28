@@ -9,10 +9,10 @@ stage("Build"){
 }
 stage("Deploy"){
     withCredentials([usernamePassword(credentialsId: 'Demo123', passwordVariable: 'CF_PASSWD', usernameVariable: 'CF_USER')]) {
-        sh "cf api https://api.cf.eu10.hana.ondemand.com"
-        sh "cf login -u $CF_USER -p $CF_PASSWD"
-        sh "cf deploy shine_cf.mtar"
-        sh "cf apps"
+        bat "cf api https://api.cf.eu10.hana.ondemand.com"
+        bat "cf login -u $CF_USER -p $CF_PASSWD"
+        bat "cf deploy shine_cf.mtar"
+        bat "cf apps"
     }
 
 }
